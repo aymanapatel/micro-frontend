@@ -7,7 +7,7 @@ import "./index.scss";
 const App = () => (
   <div className="mt-10 text-3xl mx-auto max-w-6xl">
     <div>Name: REMOTE</div>
-    <Counter />
+    <Counter app={{ name: "Remote" }} />
   </div>
 );
 ReactDOM.render(<App />, document.getElementById("app"));
