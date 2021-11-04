@@ -4,7 +4,7 @@ const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPl
 const deps = require("./package.json").dependencies;
 module.exports = {
   output: {
-    publicPath: "http://localhost:3001/",
+    publicPath: "http://localhost:8000/",
   },
 
   resolve: {
@@ -45,7 +45,7 @@ module.exports = {
       filename: "remoteEntry.js",
       remotes: {},
       exposes: {
-        "./Counter": "./src/Counter.jsx", // remoteEntry.js
+        "./Counter": "./src/Counter.jsx", // README remoteEntry.js
       },
       shared: {
         ...deps,
