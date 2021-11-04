@@ -35,7 +35,8 @@ const App = () => (
   <div className="mt-10 text-3xl mx-auto max-w-6xl">
     <div>Name: HOST</div>
     <ErrorBoundary>
-      <Counter />
+      {/* <Counter /> // For error */}
+      <Counter app={{ name: "host prop" }} />
     </ErrorBoundary>
   </div>
 );
