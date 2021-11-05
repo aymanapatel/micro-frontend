@@ -4,6 +4,10 @@
 
 ## Host and Remote
 
+|            | Remote | Host |
+|------------|--------|------|
+| Javascript | 8000   | 3000 |
+| Typescript | 8888   | 3333 |
 
 ### Host (Depending on remote)
 
