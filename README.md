@@ -36,3 +36,15 @@ Remote:
 1. `npm build:dev`
 2. `npx server dist index.html 8000`
 
+
+
+## Typescript
+
+Since types are not available, since remote is JS bundle.
+
+We need to either
+
+1. Add types in `index.d.ts` for host. But this means host devs need to maintain types.
+2. Use `shared` lib for types sharing between `host` and `remote` 
+   - In ither words `remote` -> `shared` -> `host`
+   - Problem: Different repos. Solution: Use monorepo (Nx or Lerna) OR host `shared` as npm package. 
