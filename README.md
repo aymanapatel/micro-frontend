@@ -45,6 +45,6 @@ Since types are not available, since remote is JS bundle.
 We need to either
 
 1. Add types in `index.d.ts` for host. But this means host devs need to maintain types.
-2. Use `shared` lib for types sharing between `host` and `remote` 
-   - In ither words `remote` -> `shared` -> `host`
+2. Use `shared-mfe` lib for types sharing between `host` and `remote` 
+   - In ither words `remote` -> `shared-mfe` -> `host`
    - Problem: Different repos. Solution: Use monorepo (Nx or Lerna) OR host `shared` as npm package. 
